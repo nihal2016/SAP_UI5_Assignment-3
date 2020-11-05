@@ -1,0 +1,113 @@
+<mvc:View controllerName="com.yash.Assignment3.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<SplitApp id="SplitAppDemo" initialDetail="Home" initialMaster="MasterEmployeePage" orientationChange=".onOrientationChange">
+		<detailPages>
+			<Page id="Home" title="Employee Details" backgroundDesign="Solid" class="sapUiStdPage">
+				<VBox justifyContent="Start" alignItems="Center" class="vBox header" height="100%">
+					<form:SimpleForm>
+						<Text class="midText" text="To show the Employee details press on any Employee in the Employee list!"/>
+					</form:SimpleForm>
+				</VBox>
+			</Page>
+			<Page id="employeeDetailsPage" title="Employee Detail" backgroundDesign="Standard" class="sapUiStdPage" showNavButton="true"
+				navButtonPress=".onPressHomeBack">
+				<content>
+					<VBox id="detailPageContainer" justifyContent="Start" binding="{}" class="vBox header">
+						<l:Grid width="100%">
+							<VBox>
+								<Title level="H6" class="sapUiMediumMarginBegin sapUiMediumMarginTop firstName" id="firstName" text="{firstName}"/>
+								<Text class="sapUiMediumMarginBegin midText lastName" id="lastName" text="{lastName}"/>
+							</VBox>
+							<VBox>
+								<Text class="sapUiMediumMarginBegin sapUiMediumMarginTop midText" id="gender" text="{gender}"/>
+								<Text class="sapUiMediumMarginBegin sapUiSmallMarginTop midText" id="designation" text="{designation}"/>
+							</VBox>
+						</l:Grid>
+						<l:Grid containerQuery="true">
+							<VBox >
+								<HBox>
+									<Label class="sapUiMediumMarginBegin sapUiSmallMarginEnd midText" text="Grade : "/>
+									<Text id="grade" class="midText" text="{grade}"/>
+								</HBox>
+							</VBox>
+							<VBox >
+								<HBox>
+									<Label class="sapUiMediumMarginBegin sapUiSmallMarginEnd midText" text="Id : "/>
+									<Text id="employeeId" class="midText red" text="{employeeID}"/>
+								</HBox>
+							</VBox>
+						</l:Grid>
+					</VBox>
+					<VBox class="vBox header" height="100%">
+						<HBox width="100%">
+							<items>
+								<StandardListItem id="showPersonalDetailList" class="detail" type="Active" press=".showPersonalDetailBox" title="Personal"/>
+								<StandardListItem id="showContactDetailList" class="detail" type="Active" press=".showContactDetailBox" title="Contact"/>
+								<StandardListItem id="showOfficeDetailList" class="detail" type="Active" press=".showOfficeDetailBox" title="Office"/>
+							</items>
+						</HBox>
+						<VBox id="personalDetailBox" class="sapUiMediumMarginTop sapUiMediumMarginBegin">
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Date Of Birth : "/>
+								<Title id="dateOfBirth" text="{dateOfBirth}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Father's Name : "/>
+								<Title id="fathersName" text="{fathersName}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Mother Maiden Name : "/>
+								<Title id="motherMaidenName" text="{motherMaidenName}"/>
+							</HBox>
+						</VBox>
+						<VBox id="contactDetailBox" class="sapUiMediumMarginTop sapUiMediumMarginBegin">
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Phone Number : "/>
+								<Title id="phoneNumber" text="{phoneNumber}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Alternative Number : "/>
+								<Title id="alternativeNumber" text="{alternativeNumber}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Email Address : "/>
+								<Title id="emailAddress" text="{emailAddress}"/>
+							</HBox>
+						</VBox>
+						<VBox id="officeDetailBox" class="sapUiMediumMarginTop sapUiMediumMarginBegin">
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Designation : "/>
+								<Title id="officeDesignation" text="{designation}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" text="Date Of Joining : "/>
+								<Title id="dateOfJoining" text="{dateOfJoining}"/>
+							</HBox>
+							<HBox class="sapUiResponsiveMargin">
+								<Label class="sapUiSmallMarginEnd" textAlign="Center" text="Skills : "/>
+								<List id="employeeList" items="{}">
+									<items>
+										<StandardListItem title="{skill}"/>
+									</items>
+								</List>
+							</HBox>
+						</VBox>
+					</VBox>
+				</content>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<Page id="MasterEmployeePage" title="Employees List" backgroundDesign="List" class="sapUiStdPage">
+				<content>
+					<SearchField liveChange=".searchEmployee"/>
+					<List id="masterEmployeeList" itemPress=".showEmployeeDetailPage" items="{/Employees}">
+						<items>
+							<StandardListItem title="{firstName}" description="{designation}" type="Active" custom:to="employeeDetailsPage"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</masterPages>
+	</SplitApp>
+</mvc:View>

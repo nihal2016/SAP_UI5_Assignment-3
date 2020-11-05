@@ -1,0 +1,253 @@
+{
+	"Employees": [{
+		"employeeID": "EMP1001",
+		"firstName": "JHON",
+		"lastName": "DOE",
+		"gender": "Male",
+		"grade": "M",
+		"designation": "Manager",
+		"skillSet": [{
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Access"
+		}, {
+			"skill": "SAP"
+		}, {
+			"skill": "Peoplesoft"
+		}, {
+			"skill": "ERP"
+		}],
+		"dateOfJoining": "June 6, 2010",
+		"dateOfBirth": "Aug 9, 1981",
+		"fathersName": "AUSTINE DOE",
+		"motherMaidenName": "GRACE MOSTEL",
+		"phoneNumber": "202-555-0177",
+		"alternativeNumber": "202-555-0349",
+		"emailAddress": "jhondoe17@mail.com"
+	}, {
+		"employeeID": "EMP1002",
+		"firstName": "NICK",
+		"lastName": "WAHLBERG",
+		"gender": "Male",
+		"grade": "D",
+		"designation": "Devoloper",
+		"skillSet": [{
+			"skill": "Web Devlopmen"
+		}, {
+			"skill": "JAVA"
+		}, {
+			"skill": "RUBY"
+		}, {
+			"skill": "SAPUI5"
+		}, {
+			"skill": "Python"
+		}],
+		"dateOfJoining": "July 8, 2018",
+		"dateOfBirth": "June 6, 1994",
+		"fathersName": "SIMONS WAHLBERG",
+		"motherMaidenName": "LILY MORPH",
+		"phoneNumber": "202-557-0187",
+		"alternativeNumber": "202-557-0987",
+		"emailAddress": "nick.wal@mail.com"
+	}, {
+		"employeeID": "EMP1003",
+		"firstName": "JOE",
+		"lastName": "SWANK",
+		"gender": "Male",
+		"grade": "I",
+		"designation": "Intern",
+		"skillSet": [{
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Photoshop"
+		}, {
+			"skill": "Web Devlopment"
+		}, {
+			"skill": "JAVA"
+		}, {
+			"skill": "C#"
+		}],
+		"dateOfJoining": "Sept 20, 2019",
+		"dateOfBirth": "March 12, 1996",
+		"fathersName": "RED SWANK",
+		"motherMaidenName": "AUSTINE KARL",
+		"phoneNumber": "202-75-0097",
+		"alternativeNumber": "202-75-0349",
+		"emailAddress": "joeswank32@mail.com"
+	}, {
+		"employeeID": "EMP1004",
+		"firstName": "HELEN",
+		"lastName": "VOIGHT",
+		"gender": "Female",
+		"grade": "T",
+		"designation": "Testing",
+		"skillSet": [{
+			"skill": "Java"
+		}, {
+			"skill": "Unit Testing"
+		}, {
+			"skill": "Regression Testing"
+		}, {
+			"skill": "Integration Testing"
+		}, {
+			"skill": "Interface Testing"
+		}],
+		"dateOfJoining": "April 13, 2017",
+		"dateOfBirth": "Jan 5, 1990",
+		"fathersName": "LUKE VOIGHT",
+		"motherMaidenName": "AMANDA SIEFERT",
+		"phoneNumber": "202-555-0177",
+		"alternativeNumber": "202-555-0349",
+		"emailAddress": "voight.helen@mail.com"
+	}, {
+		"employeeID": "EMP1005",
+		"firstName": "JULIA",
+		"lastName": "MCQUEEN",
+		"gender": "Female",
+		"grade": "H",
+		"designation": "HR",
+		"skillSet": [{
+			"skill": "HRIS"
+		}, {
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Onboarding"
+		}, {
+			"skill": "Performance management"
+		}, {
+			"skill": "Scheduling"
+		}],
+		"dateOfJoining": "Feb 2, 2011",
+		"dateOfBirth": "May 15, 1987",
+		"fathersName": "ROBERT MCQUEEN",
+		"motherMaidenName": "BELA WALKEN",
+		"phoneNumber": "202-087-9277",
+		"alternativeNumber": "202-095-8349",
+		"emailAddress": "julmcq@mail.com"
+	}, {
+		"employeeID": "EMP1006",
+		"firstName": "ANNE",
+		"lastName": "CRONYN",
+		"gender": "Female",
+		"grade": "M",
+		"designation": "Assistance Manager",
+		"skillSet": [{
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Access"
+		}, {
+			"skill": "Onboarding"
+		}, {
+			"skill": "Performance management"
+		}, {
+			"skill": "ERP"
+		}],
+		"dateOfJoining": "Oct 25, 2013",
+		"dateOfBirth": "Dec 4, 1985",
+		"fathersName": "MICHAEL CRONYN",
+		"motherMaidenName": "MARY KEITEL",
+		"phoneNumber": "202-555-0177",
+		"alternativeNumber": "202-555-0349",
+		"emailAddress": "annecronyn@mail.com"
+	}, {
+		"employeeID": "EMP1007",
+		"firstName": "CHRISTIAN",
+		"lastName": "AKROYD",
+		"gender": "Male",
+		"grade": "L",
+		"designation": "Product Lead",
+		"skillSet": [{
+			"skill": "Business Skills"
+		}, {
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "professional negotiato"
+		}, {
+			"skill": "Understanding of Data"
+		}, {
+			"skill": "Strategic Thinking"
+		}],
+		"dateOfJoining": "May 17, 2011",
+		"dateOfBirth": "June 21, 1978",
+		"fathersName": "AUDREY AKROYD",
+		"motherMaidenName": "BELA WALKEN",
+		"phoneNumber": "202-555-0177",
+		"alternativeNumber": "202-555-0349",
+		"emailAddress": "christianakr@mail.com"
+	}, {
+		"employeeID": "EMP1008",
+		"firstName": "ADAM",
+		"lastName": "GRANT",
+		"gender": "Male",
+		"grade": "H",
+		"designation": "HR",
+		"skillSet": [{
+			"skill": "HRIS"
+		}, {
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Onboarding"
+		}, {
+			"skill": "Performance management"
+		}, {
+			"skill": "Scheduling"
+		}],
+		"dateOfJoining": "Sept 10, 2015",
+		"dateOfBirth": "March 2, 1986",
+		"fathersName": "JEFF GRANT",
+		"motherMaidenName": "LISA MONROE",
+		"phoneNumber": "202-525-9177",
+		"alternativeNumber": "202-525-8349",
+		"emailAddress": "adam21grant@mail.com"
+	}, {
+		"employeeID": "EMP1009",
+		"firstName": "MINNIE",
+		"lastName": "ZELLWEGER",
+		"gender": "Female",
+		"grade": "D",
+		"designation": "Devoloper",
+		"skillSet": [{
+			"skill": "Web Devlopment"
+		}, {
+			"skill": "PHP"
+		}, {
+			"skill": "DB"
+		}, {
+			"skill": "Node"
+		}, {
+			"skill": "Python"
+		}],
+		"dateOfJoining": "July 8, 2018",
+		"dateOfBirth": "June 6, 1994",
+		"fathersName": "NICK ZELLWEGER",
+		"motherMaidenName": "LAURENCE BULLOCK",
+		"phoneNumber": "202-576-0127",
+		"alternativeNumber": "202-576-0949",
+		"emailAddress": ""
+	}, {
+		"employeeID": "EMP1010",
+		"firstName": "CHRISTOPHER",
+		"lastName": "BERRY",
+		"gender": "Male",
+		"grade": "M",
+		"designation": "Assistance Manager",
+		"skillSet": [{
+			"skill": "Microsoft Office"
+		}, {
+			"skill": "Access"
+		}, {
+			"skill": "Onboarding"
+		}, {
+			"skill": "Performance management"
+		}, {
+			"skill": "ERP"
+		}],
+		"dateOfJoining": "Nov 15, 2008",
+		"dateOfBirth": "Feb 4, 1981",
+		"fathersName": "IAN BERRY",
+		"motherMaidenName": "GRETA MALDEN",
+		"phoneNumber": "202-655-0477",
+		"alternativeNumber": "202-655-0319",
+		"emailAddress": "chirsberry@mail.com"
+	}]
+}

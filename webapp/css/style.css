@@ -1,0 +1,39 @@
+.vBox {
+    background: #FFF;
+}
+
+.header {
+    border-bottom-style: Solid;
+    border-bottom-color: #21618C;
+    border-bottom-width: 4px;
+}
+
+.titleBox {
+	margin-left: 40em;
+}
+
+.firstName {
+    font-size: 36px;
+    color: #21618C;
+}
+
+.lastName {
+    color: #ABB2B9;
+}
+
+.midText {
+    font-size: 24px;
+}
+
+.red {
+    color: #E74C3C;
+}
+
+.detail {
+    color: #F2F3F4;
+    background: #FFF;
+}
+
+.detailBox {
+    background: #F2F3F4;
+}
